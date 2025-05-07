@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private ScrollOffset backgroundScript;
 
     private int score;
     private bool isGameOver;
@@ -81,5 +82,7 @@ public class GameManager : MonoBehaviour
         {
             scrollingObject.StopScroll();
         }
+
+        backgroundScript.StopScroll();
     }
 }
